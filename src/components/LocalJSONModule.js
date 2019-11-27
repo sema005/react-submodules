@@ -19,11 +19,12 @@ const LocalJSONModule = () => {
             <div className="videos">
             {
                 videos.map(
-                video => <LocalJSONSubModule 
+                (video, i) => <LocalJSONSubModule 
                         song={video.song}
                         artist={video.artist}
                         number={video.number}
                         appearance={video.appearance}
+                        key={i}
                 />
                 )
             }

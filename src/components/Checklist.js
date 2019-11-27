@@ -22,7 +22,7 @@ const Checklist = () => {
             <input type="text" onKeyDown={addItem} placeholder="Add item to checklist"  />
             {
                 todos.map(
-                    (todo, i) => <ChecklistSubmodule remove={remove} myNumber={i} todo={todo}/>
+                    (todo, i) => <ChecklistSubmodule key={i} remove={remove} myNumber={i} todo={todo}/>
                 )
             }
         </div>

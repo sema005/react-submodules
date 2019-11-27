@@ -6,11 +6,17 @@ import Character from './character'
 const Characters = () => {
 
     const [characters, setCharacters] = useState(RickMorty.results)
-
+    const filtercharacter = (e) => {
+        setCharacters(
+            RickMorty.results.filter( 
+                rick => rick.name.toLocaleLowerCase().includes(e.target.value) )
+        )
+            }
     
     return(
         <div className='submodule'>
             <h2>This module presents characters from Rick and Morty</h2>
+            <input type="text" placeholder="Search after character" onInput={filtercharacter} />
             <div className="rickmorty">
             {
                 characters.map(
