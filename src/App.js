@@ -7,11 +7,13 @@ import BasicStateModule from './BasicStateModule'
 import StateArrayModule from './components/StateArrayModule'
 import LocalJSONModule from './components/LocalJSONModule'
 import Checklist from './components/Checklist'
+import Characters from './components/Characters'
 
 const App = () => {
 
   return(
     <div className="app">
+      <Characters />
       <Checklist />
       <LocalJSONModule /> 
       <StateArrayModule />
