@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './App.css'
+import BasicModule from './components/BasicModule'
+import BasicPropsModule from './components/BasicPropsModule'
+import DefaultPropsModule from './components/DefaultPropsModule'
+import BasicStateModule from './BasicStateModule'
+import StateArrayModule from './components/StateArrayModule'
+import LocalJSONModule from './components/LocalJSONModule'
+import Checklist from './components/Checklist'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const App = () => {
+
+  return(
+    <div className="app">
+      <Checklist />
+      <LocalJSONModule /> 
+      <StateArrayModule />
+      <BasicStateModule />
+      <DefaultPropsModule />
+      <BasicPropsModule  value="pink"/>
+      <BasicModule />
     </div>
-  );
+  )
 }
 
 export default App;

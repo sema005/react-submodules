@@ -1,22 +1,21 @@
-.App {
-  text-align: center;
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #eee;
 }
 
-.App-logo {
-  height: 40vmin;
+* {
+  box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.app {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax( 400px, 1fr ));
+  gap: 1rem;
+  max-width: 100vw;
 }
 
-.App-link {
-  color: #09d3ac;
+.submodule {
+  padding: 1rem;
+  background-color: white;
 }
